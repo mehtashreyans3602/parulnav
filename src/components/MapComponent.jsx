@@ -300,7 +300,7 @@ class Directions extends Component {
                                                 <div className="rounded text-white">
                                                     <div onClick={this.handleCurrentLocation}>
                                                         <button>
-                                                            <i class="fas fa-exchange-alt fa-rotate-90"></i>
+                                                            <i className="fas fa-exchange-alt fa-rotate-90"></i>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -314,17 +314,17 @@ class Directions extends Component {
 
                                 <div className="grid grid-cols-4 rounded m-4 border text-white ...">
                                     {/* MAKE it Active! */}
-                                    <button class={`form-radio ${this.state.travelMode === 'DRIVING' ? 'active' : ''}  hover:bg-blue-400  font-bold rounded-l`} onClick={() => this.handleTravelModeChange('DRIVING')}>
-                                        <i class="fa-solid fa-car"></i> Driving
+                                    <button className={`form-radio ${this.state.travelMode === 'DRIVING' ? 'active' : ''}  hover:bg-blue-400  font-bold rounded-l`} onClick={() => this.handleTravelModeChange('DRIVING')}>
+                                        <i className="fa-solid fa-car"></i> Driving
                                     </button>
-                                    <button class={`form-radio ${this.state.travelMode === 'BICYCLING' ? 'active' : ''}  hover:bg-blue-400  font-bold`} onClick={() => this.handleTravelModeChange('BICYCLING')}>
-                                        <i class="fa-solid fa-bicycle"></i> Bicycling
+                                    <button className={`form-radio ${this.state.travelMode === 'BICYCLING' ? 'active' : ''}  hover:bg-blue-400  font-bold`} onClick={() => this.handleTravelModeChange('BICYCLING')}>
+                                        <i className="fa-solid fa-bicycle"></i> Bicycling
                                     </button>
-                                    <button class={`form-radio ${this.state.travelMode === 'TRANSIT' ? 'active' : ''}  hover:bg-blue-400  font-bold`} onClick={() => this.handleTravelModeChange('TRANSIT')}>
-                                        <i class="fa-solid fa-bus"></i> Transit
+                                    <button className={`form-radio ${this.state.travelMode === 'TRANSIT' ? 'active' : ''}  hover:bg-blue-400  font-bold`} onClick={() => this.handleTravelModeChange('TRANSIT')}>
+                                        <i className="fa-solid fa-bus"></i> Transit
                                     </button>
-                                    <button class={`form-radio ${this.state.travelMode === 'WALKING' ? 'active' : ''}  hover:bg-blue-400  font-bold rounded-r`} onClick={() => this.handleTravelModeChange('WALKING')}>
-                                        <i class="fa-solid fa-person-walking"></i> Walking
+                                    <button className={`form-radio ${this.state.travelMode === 'WALKING' ? 'active' : ''}  hover:bg-blue-400  font-bold rounded-r`} onClick={() => this.handleTravelModeChange('WALKING')}>
+                                        <i className="fa-solid fa-person-walking"></i> Walking
                                     </button>
                                 </div>
                                 <div className="map-settings p-4 bg-blue-500 rounded-b-sm text-white border-y-2 border-x-2 border-amber-200 ">
